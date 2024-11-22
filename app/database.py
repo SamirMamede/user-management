@@ -1,6 +1,10 @@
+import os
+from dotenv import load_dotenv
 from motor.motor_asyncio import AsyncIOMotorClient
 
-MONGO_DETAILS = "mongodb://admin:123@localhost:27017"
+load_dotenv()
+
+MONGO_DETAILS = os.getenv("MONGO_DETAILS")
 
 client = AsyncIOMotorClient(MONGO_DETAILS)
 database = client.user_management
