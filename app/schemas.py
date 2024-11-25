@@ -24,5 +24,5 @@ def clientEntity(client) -> dict:
         "bairro": client.get("bairro", ""),
     }
 
-def clientsEntity(clients) -> list:
-    return [clientEntity(client) for client in clients]
+def clientsEntity(entity) -> list:
+    return [clientEntity(client) for client in entity]

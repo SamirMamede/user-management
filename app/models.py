@@ -1,6 +1,4 @@
 from pydantic import BaseModel, EmailStr
-from motor.motor_asyncio import AsyncIOMotorClient
-from bson import ObjectId
 from typing import Optional
 
 class Client(BaseModel):
